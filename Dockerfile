@@ -1,4 +1,4 @@
-FROM python:3.5-alpine
+FROM python:3.6-alpine
 
 RUN set -ex \
     && apk add --no-cache --update \
@@ -13,12 +13,12 @@ RUN set -ex \
     python3-dev \
     libmagic \
     git \
-    nginx \
-    supervisor \
-  && rm -rf /var/cache/apk/* && \
-  chown -R nginx:www-data /var/lib/nginx
+    curl \
+  && rm -rf /var/cache/apk/* 
 
 RUN pip install uwsgi
+
+RUN curl https://bootstrap.pypa.io/get-pip.py | python
 
 COPY ./requirements.txt /requirements.txt
 RUN pip install --no-cache-dir -r /requirements.txt
