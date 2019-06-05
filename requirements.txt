@@ -15,7 +15,7 @@ coverage==4.4.1
 decorator==4.3.0
 Django==1.11.20
 django-appconf==1.0.3
-django-axes==5.0.1
+django-axes==5.0.6
 django-bootstrap3==9.0.0
 django-cacheops==3.2.1
 django-celery-email==2.0.0
