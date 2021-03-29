@@ -60,7 +60,7 @@ psycopg2==2.7.3.1
 ptyprocess==0.5.2
 pycparser==2.18
 pycryptodomex==3.4.6
-Pygments==2.2.0
+Pygments==2.7.4
 pyjwkest==1.4.0
 PyJWT==1.5.0
 PySocks==1.6.7
